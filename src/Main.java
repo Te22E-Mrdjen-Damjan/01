@@ -1,7 +1,17 @@
+import com.sun.source.tree.WhileLoopTree;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int utskriv32= 0;
+        //while loop som skriver ut "hello world" varje gång som utskriv32 är mindre än 32
+        while (utskriv32 < 32){
+
+            System.out.println("hello world");
+            utskriv32++;//adderar 1 varje gång lopen spelas
+        }
+        /*
         //if sats som skriver ut "hello world" om 6 är större eller lika med 3
         if (6>=3){
             System.out.println("Hello world");
@@ -20,6 +30,8 @@ public class Main {
         else {
             System.out.print("The password or name is incorrect");
         }
-
+    */
     }
+
+
 }
