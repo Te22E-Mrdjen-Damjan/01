@@ -9,14 +9,17 @@ public class Main {
         //hämtar namn från användaren
         Scanner tb = new Scanner(System.in);
         System.out.println("What is your name?");
-
+        //frågar om lösenord
         String name = tb.nextLine();
-        //kontrollerar att namnet är korrekt och skriver ut "Welcome" annars skriver den att den inte är noname
-        if ("noname".equals(name)){
-            System.out.println("Welcome!");
+        System.out.println("password?");
+        String pass = tb.nextLine();
+        //kontrollerar att namnet och lösenordet är korrekt och skriver ut "Welcome" annars skriver den att den att lösenordet eller användarnamnet är incorrect
+        if ("noname".equals(name)&&"nopass".equals(pass)){
+            System.out.println("welcome");
         }
-        else{
-            System.out.println("Your name is not noname");
+        else {
+            System.out.print("The password or name is incorrect");
         }
+
     }
 }
