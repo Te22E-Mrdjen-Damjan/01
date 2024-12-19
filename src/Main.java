@@ -6,6 +6,29 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Skriv in ett tal: ");
+            String input = scanner.nextLine(); // Läser in en sträng från användaren
+
+            try {
+                int tal = Integer.parseInt(input); // Konverterar strängen till ett heltal
+
+                if (tal > 5) {
+                    System.out.println("högre än 5!");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Ogiltigt tal. Försök igen.");
+                i--; // Minska räknaren för att ge användaren en ny chans
+            }
+        }
+
+        scanner.close();
+    }
+}
+
+        /*
+        Scanner scanner = new Scanner(System.in);
+
         // Korrekt lösenord
         String correctPassword = "secret";
         String inputPassword = "";
@@ -22,7 +45,7 @@ public class Main {
 }
 
 
-        /*
+
         int utskriv32= 0;
         //while loop som skriver ut "hello world" varje gång som utskriv32 är mindre än 32
         while (utskriv32 < 32){
